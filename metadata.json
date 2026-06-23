@@ -1,0 +1,8 @@
+{
+  "name": "Remix: ASEC Corporate Website",
+  "description": "A polished corporate website for ASEC providing critical systems engineering and material distribution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

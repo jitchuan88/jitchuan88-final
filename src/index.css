@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Custom Navy Blue (Corporate Defense Theme) */
+  --color-navy-50: #f4f6fa;
+  --color-navy-100: #e6ebf4;
+  --color-navy-200: #ccd6e8;
+  --color-navy-300: #a3b8d6;
+  --color-navy-400: #7193c0;
+  --color-navy-500: #4a72a8;
+  --color-navy-600: #37588b;
+  --color-navy-700: #2c4772;
+  --color-navy-800: #1b2d49;
+  --color-navy-900: #111e33;
+  --color-navy-950: #0a1120;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #fcfdfe;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Custom fade indicator or banner animation if needed */
+.logo-ribbon-track {
+  display: flex;
+  width: calc(250px * 24);
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 12));
+  }
+}
+
